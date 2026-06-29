@@ -22,6 +22,46 @@ public class Main {
 		students.add(new Student(112, "Dominic", "Monaghan"));
 		students.add(new Student(132, "Viggo", "Mortensen"));
 		
+		
+		
+		
+		System.out.println("Original List");
+		for (Student s : students) {
+			
+			
+			System.out.println(s);
+		}
+		
+		
+		SelectionSort.sort(students, new NameComparator());
+		
+		
+		
+		System.out.println("\nSorted by Name");
+		
+		
+		
+		for (Student s : students) {
+			
+			System.out.println(s);
+			
+			
+		}
+		
+		
+		SelectionSort.sort(students,  new RollNoComparator());
+		
+		
+		
+		System.out.println("\nSorted by Roll Number");
+		
+		
+		for (Student s : students) {
+			
+			System.out.println(s);
+			
+			
+		}
 
 	}
 
